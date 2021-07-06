@@ -1,0 +1,12 @@
+FROM ubuntu:latest
+LABEL "Maintainer.name" = "varisha karim P Md"
+LABEL "Date" = "06-07-2021"
+RUN apt update -y && \
+    apt install git -y && \
+    apt install python -y && \
+    apt install nano -y 
+# VOLUME [ "volume1" ]
+# CMD [ "nginx" ]
+EXPOSE 80
+EXPOSE 443
+EXPOSE 22
